@@ -20,6 +20,7 @@ html, body {
   overflow: none;
 }
 
+/* Header */
 .app-header {
   background-color: var(--primary-color);
   box-shadow: 3px 3px 10px #888;
@@ -45,6 +46,7 @@ html, body {
   border-radius: 3px;
 }
 
+/* Subheader */
 .subheader {
   background-color: var(--secondary-color);
   color: #fff;
@@ -64,4 +66,35 @@ html, body {
 
 .subheader img {
   width: 40px;
+}
+
+/* Content Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.grid .item {
+  display: flex;
+  flex-direction: column;
+  border: 1px #ccc solid;
+  padding: 10px;
+  box-shadow: 1px 1px 2px #ccc;
+}
+
+.grid .item h4 {
+  margin-bottom: 5px;
+}
+
+.grid .item p {
+  font-size: 14px;
+  color: var(--secondary-color);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.grid .item img {
+  width: 30px;
+  align-self: flex-end;
 }
